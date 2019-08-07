@@ -1,0 +1,4 @@
+#Wed Aug 07 15:49:47 EET 2019
+base.0=D\:\\Flutter\\Projects\\bezier_curve\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
