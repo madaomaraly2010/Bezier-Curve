@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
 
 class HomeServicePage extends StatelessWidget {
   final List<ServiceItem> services = [
-    ServiceItem('Cleaning', Icons.cleaning_services, Color(0xFF4F46E5)),
-    ServiceItem('Plumbing', Icons.plumbing, Color(0xFF0EA5E9)),
-    ServiceItem('Electrical', Icons.electrical_services, Color(0xFFF59E0B)),
+    ServiceItem('Cleaning', Icons.home, Color(0xFF4F46E5)),
+    ServiceItem('Plumbing', Icons.build, Color(0xFF0EA5E9)),
+    ServiceItem('Electrical', Icons.flash_on, Color(0xFFF59E0B)),
     ServiceItem('Painting', Icons.format_paint, Color(0xFF10B981)),
   ];
 
@@ -126,10 +126,10 @@ class HomeServicePage extends StatelessWidget {
         selectedItemColor: Color(0xFF115173),
         unselectedItemColor: Colors.grey,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore'),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'Bookings'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
+          BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('Explore')),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today), title: Text('Bookings')),
+          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('Profile')),
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
@@ -245,7 +245,7 @@ class _BookingCard extends StatelessWidget {
               color: Color(0xFFE6F0F8),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Icon(Icons.home_repair_service, color: Color(0xFF115173)),
+            child: Icon(Icons.event_note, color: Color(0xFF115173)),
           ),
           SizedBox(width: 12),
           Expanded(
